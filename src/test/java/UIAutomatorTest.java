@@ -7,7 +7,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
 
 public class UIAutomatorTest {
 
@@ -39,7 +38,6 @@ public class UIAutomatorTest {
         desiredCapabilities.setCapability("appium:connectHardwareKeyboard", true);
         driver = new AndroidDriver(getUrl(), desiredCapabilities);
         mobileObject = new MobileObject(driver);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
 
